@@ -1,0 +1,6 @@
+
+languageCode = 'ru'
+title = 'архимед'
+baseUrl = 'http://localhost:1313/'
+[params]
+  custom_css = ["css/custom.css"]

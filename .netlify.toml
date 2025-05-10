@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 [build]
   publish = "public"
   command = "hugo"
 
 [build.environment]
   HUGO_VERSION = "0.115.4"
+=======
+[build]
+  publish = "public"
+  command = "hugo"
+
+[build.environment]
+  HUGO_VERSION = "0.115.4"
+>>>>>>> 45c9073 (Обновления сайта: стили, JS, карточки, хедер)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta name="generator" content="Hugo 0.143.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39160&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.143.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>архимед</title>
@@ -9,26 +9,38 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-container">
-          <div class="logo">
-            <img src="/images/logo.png" alt="Логотип" />
-          </div>
-          <nav class="menu">
-            <a href="#mission">О нас</a>
-            <a href="#course">Курсы</a>
-            <a href="#teachers">Преподаватели</a>
-            <a href="#contact">Записаться</a>
-          </nav>
+  <header class="site-header">
+    <div class="header-container">
+        
+        <div class="logo">
+            <img src="/images/logo.png" alt="Логотип">
         </div>
-      </header>
+
+        
+        <nav class="menu">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">О нас</a><li>
+                <li><a href="#course">Курсы</a><li>
+                <li><a href="#contact">Записаться</a><li>
+                <li><a href="#gallery">Галерея</a><li>
+            </ul>
+            
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>        
+        </nav>
+    
+    </div>
+</header>
 
 <main>
     
 
 
 <main> 
-    <section class="hero-section-bg">
+    <section class="hero-section-bg" id="hero">
         <div class="hero-overlay">
           <div class="hero-content">
             <h1>АРХИМЕД</h1>
@@ -181,10 +193,11 @@
         <div class="course-card">
           <div class="course-card-inner">
             <div class="course-card-front">
-              <p>Летний лагерь</p>
+              <p>Дневной лагерь "Архимед"</p>
             </div>
             <div class="course-card-back">
-              <a href="#contact" class="course-btn">Узнать больше и записаться</a>
+              <a href="https://vk.com/uslugi-215423288?screen=group" target="_blank" rel="noopener noreferrer" class="course-btn">Больше информации тут</a>
+              <a href="#contact" class="course-btn">Записаться и связаться с нами</a>
             </div>
           </div>
         </div>
@@ -243,7 +256,7 @@
     </div>
   </section>
 
-  <section class="gallery-section animate">
+  <section id="gallery" class="gallery-section animate"> 
     <h2>Галерея</h2>
     <div class="gallery-container">
         <div class="gallery-track">
@@ -266,11 +279,11 @@
 
   <footer class="footer">
     <p>© 2025 Архимед</p>
-    <p><a href="/pdf/license.pdf" download>Скачать образовательную лицензию</a></p>
-    <p><a href="/pdf/policy.pdf" download>Скачать согласие на обработку персональных данных</a></p>
-    <p><a href="/pdf/contract.pdf" download>Скачать шаблон договора</a></p>
-    <p><a href="/pdf/prices.pdf" download>Скачать прейскурант цен</a></p>
-    <p><a href="/pdf/sanep.pdf" download>Скачать санитарно-эпидемиологическое заключение</a></p>
+    <p><a href="/pdf/license.pdf" download>Образовательная лицензия</a></p>
+    <p><a href="/pdf/policy.pdf" download>Согласие на обработку персональных данных</a></p>
+    <p><a href="/pdf/contract.pdf" download>Шаблон договора</a></p>
+    <p><a href="/pdf/prices.pdf" download>Прейскурант цен</a></p>
+    <p><a href="/pdf/sanep.pdf" download>Санитарно-эпидемиологическое заключение</a></p>
   </footer>
 </main>
 
@@ -296,7 +309,7 @@
 <script src="/js/teachers.js"></script>
 <script src="/js/form.js"></script>
 <script src="/js/faq.js"></script>
-
+<script src="/js/menu.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.css">
 <script src="https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>

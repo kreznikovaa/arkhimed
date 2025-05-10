@@ -8,19 +8,31 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="header-container">
-          <div class="logo">
-            <img src="/images/logo.png" alt="Логотип" />
-          </div>
-          <nav class="menu">
-            <a href="#mission">О нас</a>
-            <a href="#course">Курсы</a>
-            <a href="#teachers">Преподаватели</a>
-            <a href="#contact">Записаться</a>
-          </nav>
+  <header class="site-header">
+    <div class="header-container">
+        <!-- Логотип -->
+        <div class="logo">
+            <img src="{{ "/images/logo.png" | relURL }}" alt="Логотип">
         </div>
-      </header>
+
+        <!-- Меню -->
+        <nav class="menu">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">О нас</a><li>
+                <li><a href="#course">Курсы</a><li>
+                <li><a href="#contact">Записаться</a><li>
+                <li><a href="#gallery">Галерея</a><li>
+            </ul>
+            
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>        
+        </nav>
+    
+    </div>
+</header>
 
 <main>
     {{ block "main" . }}{{ end }}
@@ -30,7 +42,7 @@
 <script src="{{ "/js/teachers.js" | relURL }}"></script>
 <script src="{{ "/js/form.js" | relURL }}"></script>
 <script src="{{ "/js/faq.js" | relURL }}"></script>
-
+<script src="{{ "/js/menu.js" | relURL }}"></script>
 <!-- Lightbox стили и скрипт -->
 <link rel="stylesheet" href="https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.css">
 <script src="https://unpkg.com/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>

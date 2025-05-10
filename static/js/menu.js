@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const back = card.querySelector(".course-card-back");
   
       if (front) {
-        front.style.background = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${img}') center/cover no-repeat`;
+        front.style.background = `url('${img}') center/cover no-repeat`;
         front.style.color = "white";
       }
   

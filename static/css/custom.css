@@ -86,6 +86,9 @@
     .logo img {
     height: 40px;
   }  
+   .logo img {
+    margin-right: 10%;
+    margin-left: 1%;
   }
   .menu {
     display: flex;
@@ -162,7 +165,7 @@
 }
 @media (max-width: 768px) {
 .hero-section{
-  height: 100vh;
+  height: 80vh;
 }
 .hero-section img {
   height: 100%;

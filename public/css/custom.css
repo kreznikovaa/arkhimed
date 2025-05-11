@@ -727,30 +727,7 @@
   }
   
   /* --- Responsive Header Adjustments --- */
-  @media (max-width: 600px) {
-    .menu a {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 500px) {
-    .site-header {
-      height: auto;
-      padding: 10px 0;
-    }
-    .header-container {
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-    }
-    .menu {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .menu a {
-      padding: 5px 10px;
-    }
-  }
+
   .nav-links {
     list-style: none;
     display: flex;
@@ -773,16 +750,17 @@
   .burger span {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: var(--black);
     border-radius: 2px;
   }
   
   /* Мобильная адаптация */
   @media (max-width: 768px) {
+    
     .nav-links {
       position: absolute;
       top: 60px;
-      right: 20px;
+      right: 0px;
       background-color: white;
       flex-direction: column;
       gap: 15px;

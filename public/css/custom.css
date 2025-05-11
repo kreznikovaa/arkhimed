@@ -49,7 +49,7 @@
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 30px;
     box-sizing: border-box;
     background: var(--white);
   }
@@ -99,67 +99,63 @@
   
 
   
-  .hero-section-bg {
-    position: relative;
-    width: 100%;
-    height: 90vh; /* Полноэкранный первый экран */
-    background-image: url('/images/1.jpg'); /* Путь к твоему фото */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-overlay {
-    background: rgba(255, 255, 255, 0.4); /* Белая полупрозрачная подложка */
-    padding: 60px 40px;
-    max-width: 600px;
-    backdrop-filter: blur(5px);
-    text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0px 40px;
+  color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: flex-start;
 }
 
-.hero-content h1 {
-    font-family: 'Headings', sans-serif;
-    font-size: 100px;
-    margin-bottom: 20px;
-    color: var(--black);
+.hero-overlay h1 {
+  font-size: 80px;
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.hero-content p {
-    font-family: 'Text', sans-serif;
-    font-size: 24px;
-    margin-bottom: 30px;
-    color: var(--black);
-    opacity: 0.8;
+
+.hero-overlay p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
-.hero-button-bg {
-    background: var(--blue);
-    padding: 15px 30px;
-    border-radius: 12px;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 0.3s, transform 0.3s;
+.hero-button {
+  background-color: var(--blue);
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-.hero-button-bg:hover {
-    background: var(--dark-blue);
-    transform: translateY(-3px);
+.hero-button:hover {
+  background-color: #007bd3;
 }
 
-/* Мобильная адаптация */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 50px;
-    }
-    .hero-content p {
-        font-size: 18px;
-    }
-}
 
   /* --- Features Section (Benefits) --- */
   .features-section {
@@ -789,3 +785,35 @@
   transform: translateY(-100%);
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+.cookie-banner a {
+  color: #7fd4ff;
+  text-decoration: underline;
+}
+.cookie-banner button {
+  background: #7fd4ff;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cookie-banner.hidden {
+  display: none;
+}

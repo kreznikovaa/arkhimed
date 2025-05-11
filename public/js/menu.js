@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const back = card.querySelector(".course-card-back");
   
       if (front) {
-        front.style.background = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('${img}') center/cover no-repeat`;
+        front.style.background = `url('${img}') center/cover no-repeat`;
         front.style.color = "white";
       }
   
@@ -87,3 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
     previousScrollY = currentScrollY;
   });
 })();
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("cookie-accept");
+
+  if (!localStorage.getItem("cookieAccepted")) {
+    banner.classList.remove("hidden");
+  }
+
+  acceptBtn.addEventListener("click", function () {
+    localStorage.setItem("cookieAccepted", "true");
+    banner.classList.add("hidden");
+  });
+});

@@ -1,16 +1,16 @@
 {{ define "main" }}
 
 
-<main> <!-- Begin main content -->
-    <section class="hero-section-bg" id="hero">
-        <div class="hero-overlay">
-          <div class="hero-content">
-            <h1>АРХИМЕД</h1>
-            <p>Центр олимпиадной подготовки</p>
-            <a href="#contact" class="hero-button-bg">Записаться</a>
-          </div>
-        </div>
-      </section>
+<section class="hero-section">
+  <img src="/images/1.jpg" alt="Ученики Архимеда" class="hero-image" />
+  <div class="hero-overlay">
+    <h1>Центр олимпиадной подготовки</h1>
+    <p>Всё, что мы делаем — ради того, чтобы учёба имела смысл. В момент, когда у ученика загораются глаза, мы знаем — получилось.</p>
+    <a href="#contact" class="hero-button">Записаться</a>
+  </div>
+</section>
+
+
       
       
 
@@ -43,7 +43,7 @@
     <h2>Почему нам доверяют</h2>
     <ul class="trust-list">
       <li><strong>+14 баллов ЕГЭ</strong> — в среднем наши ученики улучшают результат на 14 баллов.</li>
-      <li><strong>Призёры Всероса</strong> — наши учащиеся становятся призёрами муниципального этапа Всероссийской олимпиады по математике.</li>
+      <li><strong>Призёры ВсОШ</strong> — наши учащиеся становятся призёрами муниципального этапа Всероссийской олимпиады по математике.</li>
       <li><strong>Отличные отзывы</strong> — оставьте заявку и узнайте, почему нас рекомендуют другие родители и ученики.</li>
     </ul>
     <div class="review-container">
@@ -264,4 +264,12 @@
     observer.observe(section);
   });
 </script>
+<div class="cookie-banner" id="cookie-banner">
+  <p>
+    Мы используем файлы cookie, чтобы улучшить работу сайта.
+    <a href="/pdf/privacy.pdf">Подробнее</a>
+  </p>
+  <button id="cookie-accept">Принять</button>
+</div>
+
 {{ end }}

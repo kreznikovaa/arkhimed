@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Архимед</title>
     <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
 </head>
 
 <body>
@@ -19,10 +20,11 @@
         <!-- Меню -->
         <nav class="menu">
             <ul class="nav-links" id="navLinks">
-                <li><a href="#hero">О нас</a><li>
-                <li><a href="#course">Курсы</a><li>
-                <li><a href="#contact">Записаться</a><li>
-                <li><a href="#gallery">Галерея</a><li>
+                <li><a href="/#hero">О нас</a></li>
+                <li><a href="/#course">Курсы</a></li>
+                <li><a href="/#contact">Записаться</a></li>
+                <li><a href="/#gallery">Галерея</a></li>
+                <li><a href="/documents/">Документы</a></li>
             </ul>
             
             <div class="burger" id="burger">
@@ -50,7 +52,11 @@
 
 <!-- Твой файл с кодом галереи -->
 <script src="/js/gallery.js"></script>
-
+  <footer class="footer">
+    <p>© 2025 Архимед</p>
+    <p><a href="/pdf/policy.pdf" download>Согласие на обработку персональных данных</a></p>
+  </footer>
+</main>
 
 </body>
 </html>

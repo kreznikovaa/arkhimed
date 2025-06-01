@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let phone = document.getElementById("phone").value.trim();
         let messenger = document.getElementById("messenger").value.trim();
         let courses = document.getElementById("courses").value.trim();
+        let eMail = document.getElementById("email").value.trim();
+
         // Собираем предпочтительный способ связи
         let contactMethods = Array.from(document.querySelectorAll("input[name='contactMethod']:checked"))
             .map(method => method.value)
@@ -17,11 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         // Формируем примечание (курс + предпочтительный способ связи)
-        let description = `Курс: ${courses}. Связаться через: ${contactMethods}. Телграм: ${messenger}. spd ${spd}`;
+        let description = `Курс: ${courses}. Связаться через: ${contactMethods}. ВК: ${messenger}. spd ${spd}`;
 
         let data = {
             fullName,
             phone,
+            eMail,
             description // Курс + способ связи в примечаниях
         };
 

@@ -46,17 +46,29 @@
       <li><strong>Призёры ВсОШ</strong> — наши учащиеся становятся призёрами муниципального этапа Всероссийской олимпиады по математике.</li>
       <li><strong>Отличные отзывы</strong> — оставьте заявку и узнайте, почему нас рекомендуют другие родители и ученики.</li>
     </ul>
-    <div class="review-container">
-      <blockquote>
-        <p>“Занимаюсь уже 8-9 месяцев, очень нравится — смогла поднять успеваемость по математике! Очень хорошо готовят к экзаменам! 👍”</p>
-        <cite>— Варвара Табарова</cite>
-      </blockquote>
-      <blockquote>
-        <p>“Занимаюсь математикой с 5 июня, учитель Дмитрий Сергеевич Костенко. Ни капельки не пожалела, что записалась. Дмитрий Сергеевич хорошо объясняет и находит подход к каждому ученику, он настоящий профессионал своего дела. До занятий у меня были тройки, а теперь пятёрки — результат очень радует!”</p>
-        <cite>— Карина Антонян</cite>
-      </blockquote>
-    </div>
   </section>
+
+  <section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2>Отзывы</h2>
+    <div class="reviews-container">
+      <button class="review-nav review-prev" aria-label="Previous review">‹</button>
+      <div class="reviews-track">
+        <blockquote class="review">
+         <p>“Занимаюсь уже 8-9 месяцев, очень нравится — смогла поднять успеваемость по математике! Очень хорошо готовят к экзаменам! 👍”</p>
+         <footer>— Варвара Табарова</footer>
+        </blockquote>
+        <blockquote class="review">
+         <p>“Занимаюсь математикой с 5 июня, учитель Дмитрий Сергеевич Костенко. Ни капельки не пожалела, что записалась. Дмитрий Сергеевич хорошо объясняет и находит подход к каждому ученику, он настоящий профессионал своего дела. До занятий у меня были тройки, а теперь пятёрки — результат очень радует!”</p>
+         <footer>— Карина Антонян</footer>
+        </blockquote>
+        <!-- добавляй сколько угодно отзывов -->
+      </div>
+      <button class="review-nav review-next" aria-label="Next review">›</button>
+    </div>
+  </div>
+</section>
+
 
   <section id="course" class="courses-section animate">
     <h2>Наши курсы</h2>
@@ -178,14 +190,17 @@
         <label for="phone">Телефон для связи</label>
         <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required />
 
-        <label for="messenger">Телеграм</label>
-        <input type="text" id="messenger" name="messenger" placeholder="@nickname" />
+        <label for="messenger">ВК</label>
+        <input type="text" id="messenger" name="messenger" placeholder="nickname" />
+
+        <label for="Email">Почта</label>
+        <input type="email" id="email" name="email" placeholder="Ваша почта" />
 
         <label>Как с вами лучше связаться?</label>
         <div class="checkbox-group">
           <label><input type="checkbox" name="contactMethod" value="Телефон"> Телефон</label>
-          <label><input type="checkbox" name="contactMethod" value="Телеграм"> Телеграм</label>
-          <label><input type="checkbox" name="contactMethod" value="WhatsApp"> WhatsApp</label>
+          <label><input type="checkbox" name="contactMethod" value="ВК"> ВК</label>
+          <label><input type="checkbox" name="contactMethod" value="Почта"> Почта</label>
         </div>
 
         <label for="courses">Какие курсы вас интересуют?</label>
@@ -238,17 +253,6 @@
     </div>
 </section>
 
-
-  <footer class="footer">
-    <p>© 2025 Архимед</p>
-    <p><a href="/pdf/license.pdf" download>Образовательная лицензия</a></p>
-    <p><a href="/pdf/policy.pdf" download>Согласие на обработку персональных данных</a></p>
-    <p><a href="/pdf/contract.pdf" download>Шаблон договора</a></p>
-    <p><a href="/pdf/prices.pdf" download>Прейскурант цен</a></p>
-    <p><a href="/pdf/sanep.pdf" download>Санитарно-эпидемиологическое заключение</a></p>
-  </footer>
-</main>
-
 <!-- IntersectionObserver for reveal animations -->
 <script>
   const observerOptions = { threshold: 0.1 };
@@ -267,7 +271,7 @@
 <div class="cookie-banner" id="cookie-banner">
   <p>
     Мы используем файлы cookie, чтобы улучшить работу сайта.
-    <a href="/pdf/privacy.pdf">Подробнее</a>
+    <a href='https://disk.yandex.ru/i/6bP153yAmp8aZA'>Подробнее</a>
   </p>
   <button id="cookie-accept">Принять</button>
 </div>

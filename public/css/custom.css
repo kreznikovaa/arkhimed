@@ -841,3 +841,115 @@
 .cookie-banner.hidden {
   display: none;
 }
+.reviews-section {
+  background: #2f2d4d;
+  padding: 60px 0;
+}
+.reviews-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+/* Контейнер с треком и стрелками */
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* было center — меняем на flex-start */
+  position: relative;
+}
+
+/* «Трек» отзывов: flex + overflow */
+.reviews-track {
+  gap: 20px;  
+  -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;     
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-x: auto;              /* разрешаем прокрутку */      /* плавная прокрутка */
+  scroll-snap-type: x mandatory;
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto; /* центрируем по горизонтали */             /* подгони под желаемую ширину */
+}
+
+/* Один отзыв */
+.review {
+  flex: 0 0 100%;           /* каждый отзыв — как ширина трека */
+  max-width: 600px;         /* не растягиваемся слишком */
+  margin: 0 auto;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: left;
+  scroll-snap-align: start;  
+}
+.review p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.review footer {
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Стрелки */
+.review-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 48px;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+}
+.review-prev {
+  left: 0;
+}
+.review-next {
+  right: 0;
+}
+
+.documents-list {
+  font-size: 16px;
+  max-width: 80%;
+  margin: 20px auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.documents-list li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.documents-list a {
+  color: #282648;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.3s ease;
+}
+
+.documents-list a:hover {
+  border-bottom-color: #282648;
+  color: #007bff;
+}
+
+.documents-list {
+  list-style: none;       /* убирает кружочки */
+  padding-left: 50px;        /* убирает отступ слева */
+  margin: 100px 0;         /* отступ сверху и снизу */
+  text-align: left;       /* выравнивание по левому краю */
+}
+.documents-list h2 {
+  font-size: 30px;
+}

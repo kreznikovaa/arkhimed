@@ -1,0 +1,72 @@
+_schema: _schema
+paths:
+  uploads: static/uploads
+  static: static
+collections_config:
+  pages:
+    path: content
+    name: Pages
+    icon: wysiwyg
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  courses:
+    path: content/courses
+    glob:
+      - '!_index.md'
+    name: Courses
+    icon: cases
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  gallery:
+    path: content/gallery
+    glob:
+      - '!_index.md'
+    name: Gallery
+    icon: allergy
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: content/posts
+    glob:
+      - '!_index.md'
+    name: Posts
+    icon: event_available
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  reviews:
+    path: content/reviews
+    glob:
+      - '!_index.md'
+    name: Reviews
+    icon: reviews
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_snippets_imports:
+  hugo:
+    exclude:
+      - hugo_instagram
+timezone: Europe/Moscow
+markdown:
+  engine: commonmark
+  options:
+    xhtml: false
+    breaks: false
+    linkify: false
+    typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: true
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
+    attributes: false

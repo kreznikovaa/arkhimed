@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "courses"
+    label: "Курсы"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Название курса" }
+      - { name: "category", label: "Категория" }
+      - { name: "format", label: "Формат занятий" }
+      - { name: "price", label: "Цена" }
+      - { name: "date", label: "Дата", widget: "datetime" }
+
+  - name: "reviews"
+    label: "Отзывы"
+    folder: "content/reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Имя и статус" }
+      - { name: "text", label: "Текст отзыва", widget: "text" }
+      - { name: "date", label: "Дата", widget: "datetime" }
+
+  - name: "gallery"
+    label: "Галерея"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Название" }
+      - { name: "image", label: "Изображение", widget: "image" }
+
+  - name: "posts"
+    label: "Страницы"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Заголовок" }
+      - { name: "body", label: "Контент", widget: "markdown" }
+
+  - name: "documents"
+    label: "Документы"
+    file: "content/documents.md"
+    fields:
+      - { name: "title", label: "Заголовок" }
+      - { name: "body", label: "Контент", widget: "markdown" }

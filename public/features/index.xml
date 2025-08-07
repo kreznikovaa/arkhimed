@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on архимед</title>
+    <link>http://localhost:1313/features/</link>
+    <description>Recent content in Features on архимед</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/features/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Маленькие учебные группы</title>
+      <link>http://localhost:1313/features/3-gruppy/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/3-gruppy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Образовательная лицензия</title>
+      <link>http://localhost:1313/features/4-licenzia/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/4-licenzia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Проверенные программы</title>
+      <link>http://localhost:1313/features/2-programmy/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/2-programmy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Удобный личный кабинет</title>
+      <link>http://localhost:1313/features/1-lichny-kabinet/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/1-lichny-kabinet/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

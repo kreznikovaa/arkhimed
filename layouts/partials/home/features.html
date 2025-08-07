@@ -1,0 +1,11 @@
+<section class="features-section animate">
+  <div class="features-container">
+    {{ range (where site.RegularPages "Section" "features") }}
+      <div class="feature-card">
+        <img src="{{ .Params.image }}" alt="Иконка" />
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.description }}</p>
+      </div>
+    {{ end }}
+  </div>
+</section>

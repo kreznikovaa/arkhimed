@@ -51,43 +51,37 @@
   </div>
 </section>
 
-
-      
-      
-
-  <section class="features-section animate">
-    <div class="features-container">
-      <div class="feature-card">
-        <img src="/images/icon1.png" alt="Иконка" />
-        <h3>Удобный личный кабинет</h3>
-        <p>Все материалы и обратная связь в одном месте.</p>
-      </div>
-      <div class="feature-card">
-        <img src="/images/icon1.png" alt="Иконка" />
-        <h3>Проверенные программы</h3>
-        <p>Мы работаем только по проверенным образовательным программам.</p>
-      </div>
+<section class="features-section animate">
+  <div class="features-container">
+    
       <div class="feature-card">
         <img src="/images/icon1.png" alt="Иконка" />
         <h3>Маленькие учебные группы</h3>
         <p>Персональный подход и внимание к каждому студенту.</p>
       </div>
+    
       <div class="feature-card">
         <img src="/images/icon1.png" alt="Иконка" />
         <h3>Образовательная лицензия</h3>
         <p>Можно получить налоговый вычет и оплатить материнским капиталом.</p>
       </div>
-    </div>
-  </section>
+    
+      <div class="feature-card">
+        <img src="/images/icon1.png" alt="Иконка" />
+        <h3>Проверенные программы</h3>
+        <p>Мы работаем только по проверенным образовательным программам.</p>
+      </div>
+    
+      <div class="feature-card">
+        <img src="/images/icon1.png" alt="Иконка" />
+        <h3>Удобный личный кабинет</h3>
+        <p>Все материалы и обратная связь в одном месте.</p>
+      </div>
+    
+  </div>
+</section>
 
-  <section class="trust-factors animate">
-    <h2>Почему нам доверяют</h2>
-    <ul class="trust-list">
-      <li><strong>+14 баллов ЕГЭ</strong> — в среднем наши ученики улучшают результат на 14 баллов.</li>
-      <li><strong>Призёры ВсОШ</strong> — наши учащиеся становятся призёрами муниципального этапа Всероссийской олимпиады по математике.</li>
-      <li><strong>Отличные отзывы</strong> — оставьте заявку и узнайте, почему нас рекомендуют другие родители и ученики.</li>
-    </ul>
-  </section>
+
 
 <section id="reviews" class="reviews-section">
   <div class="container">
@@ -334,32 +328,23 @@
       
         <img src="/images/uploads-gallery/9.jpg" alt="Занятие" class="gallery-img">
       
+        <img src="/uploads/13.jpg" alt="Занятие" class="gallery-img">
+      
+        <img src="/uploads/14.jpg" alt="Занятие" class="gallery-img">
+      
+        <img src="/uploads/15.jpg" alt="Занятие" class="gallery-img">
+      
+        <img src="/uploads/12.jpg" alt="Занятие" class="gallery-img">
+      
+        <img src="/uploads/%d0%bc%d0%b0%d1%82-%d1%84%d0%b5%d1%81%d1%82-123-1.jpg" alt="Занятие" class="gallery-img">
+      
     </div>
   </div>
 </section>
 
 
-<script>
-  const observerOptions = { threshold: 0.1 };
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-  document.querySelectorAll('.animate').forEach(section => {
-    observer.observe(section);
-  });
-</script>
-<div class="cookie-banner" id="cookie-banner">
-  <p>
-    Мы используем файлы cookie, чтобы улучшить работу сайта.
-    <a href='https://disk.yandex.ru/i/6bP153yAmp8aZA'>Подробнее</a>
-  </p>
-  <button id="cookie-accept">Принять</button>
-</div>
+<script src="/js/observer.js"></script>
+<script src="/js/cookie.js"></script>
 
 
 </main>

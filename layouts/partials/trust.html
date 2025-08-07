@@ -1,0 +1,8 @@
+<section class="trust-factors animate">
+  <h2>Почему нам доверяют</h2>
+  <ul class="trust-list">
+    {{ range sort (where site.RegularPages "Section" "trust") ".Params.weight" }}
+      <li><strong>{{ .Title }}</strong> — {{ .Content | markdownify }}</li>
+    {{ end }}
+  </ul>
+</section>

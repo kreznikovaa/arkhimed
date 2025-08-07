@@ -9,6 +9,20 @@
     <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Маленькие учебные группы</title>
+      <link>http://localhost:1313/features/3-gruppy/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/3-gruppy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Образовательная лицензия</title>
+      <link>http://localhost:1313/features/4-licenzia/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/4-licenzia/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Олимпиадная математика, 5-6 класс</title>
       <link>http://localhost:1313/courses/olimpiadnaya-matematika-5-6/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
@@ -44,6 +58,13 @@
       <description></description>
     </item>
     <item>
+      <title>Проверенные программы</title>
+      <link>http://localhost:1313/features/2-programmy/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/2-programmy/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Углубленная математика, 7 класс</title>
       <link>http://localhost:1313/courses/uglublennaya-matematika-7/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
@@ -55,6 +76,13 @@
       <link>http://localhost:1313/courses/uglublennaya-matematika-8/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/courses/uglublennaya-matematika-8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Удобный личный кабинет</title>
+      <link>http://localhost:1313/features/1-lichny-kabinet/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/features/1-lichny-kabinet/</guid>
       <description></description>
     </item>
     <item>
@@ -146,6 +174,62 @@
       <link>http://localhost:1313/gallery/9/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/gallery/9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/new-gallery-1/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/new-gallery-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/new-gallery-2/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/new-gallery-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/new-gallery-3/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/new-gallery-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/new-gallery/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/new-gallery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/</link>
+      <pubDate>Thu, 01 May 2025 03:00:00 +0300</pubDate>
+      <guid>http://localhost:1313/gallery/%D0%B7%D0%B0%D0%BD%D1%8F%D1%82%D0%B8%D0%B5/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/uploads/photo-2025-04-09-17-59-08.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>&#43;14 баллов ЕГЭ</title>
+      <link>http://localhost:1313/trust/trust-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/trust/trust-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Отличные отзывы</title>
+      <link>http://localhost:1313/trust/trust-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/trust/trust-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Призёры ВсОШ</title>
+      <link>http://localhost:1313/trust/trust-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/trust/trust-2/</guid>
       <description></description>
     </item>
     <item>

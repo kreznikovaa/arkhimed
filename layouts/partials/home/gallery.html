@@ -1,0 +1,10 @@
+<section id="gallery" class="gallery-section animate"> 
+  <h2>Галерея</h2>
+  <div class="gallery-container">
+    <div class="gallery-track">
+      {{ range (where site.RegularPages "Section" "gallery") }}
+        <img src="{{ .Params.image }}" alt="{{ .Title }}" class="gallery-img">
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+<section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2>Отзывы</h2>
+    <div class="reviews-container">
+      <!-- <button class="review-nav review-prev">‹</button> -->
+
+      <div class="reviews-viewport">
+        <div class="reviews-track">
+          {{ range (where site.RegularPages "Section" "reviews") }}
+          <blockquote class="review">
+          <p>“{{ .Params.body }}”</p>
+          <footer>— {{ .Params.author }}</footer>
+          </blockquote>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- <button class="review-nav review-next">›</button> -->
+    </div>
+  </div>
+</section>

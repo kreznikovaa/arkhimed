@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main  # или master — зависит от твоей ветки на GitHub
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+locale: 'ru'
+
+collections:
+  - name: "courses"
+    label: "Курсы"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Название курса", name: "title", widget: "string" }
+      - { label: "Категория", name: "category", widget: "select", options: ["math", "special"], default: "math" }
+      - { label: "Формат", name: "format", widget: "string", required: false }
+      - { label: "Цена", name: "price", widget: "string", required: false }
+      - { label: "Дополнительный текст или HTML", name: "body", widget: "markdown", required: false }
+      - { label: "Дата", name: "date", widget: "datetime", default: "" }
+
+  - name: "gallery"
+    label: "Галерея"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "static/images/uploads-gallery"
+    public_folder: "/images/uploads-gallery"
+    fields:
+      - { label: "Название фото", name: "title", widget: "string" }
+      - { label: "Дата", name: "date", widget: "datetime", default: "" }
+      - { label: "Изображение", name: "image", widget: "image" }
+      - { label: "Описание", name: "description", widget: "string", required: false }

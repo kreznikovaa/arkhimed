@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Галерея on архимед</title>
+    <link>http://localhost:1313/gallery/</link>
+    <description>Recent content in Галерея on архимед</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/1/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/10/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/11/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/11/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/2/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/3/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/4/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/5/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/6/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/7/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/8/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Занятие</title>
+      <link>http://localhost:1313/gallery/9/</link>
+      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gallery/9/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

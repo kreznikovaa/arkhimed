@@ -108,19 +108,19 @@
   
 
   
-  .hero-section {
+  .main-page {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.hero-image {
+.main-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.hero-overlay {
+.main-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@
   align-items: flex-start;
 }
 
-.hero-overlay h1 {
+.main-overlay h1 {
   font-size: 80px;
   color: var(--black);
   font-weight: 700;
@@ -142,7 +142,7 @@
 }
 
 
-.hero-overlay p {
+.main-overlay p {
   max-width: 600px;
   font-size: 18px;
   line-height: 1.4;
@@ -150,7 +150,7 @@
   font-weight: bold;
 }
 
-.hero-button {
+.main-button {
   background-color: var(--blue);
   color: white;
   font-size: 18px;
@@ -161,41 +161,41 @@
   transition: background 0.3s ease;
 }
 
-.hero-button:hover {
+.main-button:hover {
   background-color: #007bd3;
 }
 @media (max-width: 768px) {
-.hero-section{
+.main-page{
   height: 80vh;
 }
-.hero-section img {
+.main-page img {
   height: 100%;
   object-fit: cover;
 }
 
 
-  .hero-overlay {
+  .main-overlay {
     padding: 30px;
     max-width: 90%;
     height: max-content;
   }
 
-  .hero-overlay h1 {
+  .main-overlay h1 {
     font-size: 40px;
     width: 90%;
 
   }
 
-  .hero-overlay h2 {
+  .main-overlay h2 {
     font-size: 20px;
   }
 
-  .hero-overlay p {
+  .main-overlay p {
     font-size: 14px;
     width: 100%;
   }
 
-  .hero-overlay .hero-btn {
+  .main-overlay .main-btn {
     font-size: 14px;
     padding: 10px 20px;
   }
@@ -287,7 +287,19 @@
     font-size: 16px;
     font-weight: bold;
   }
-  
+  .reviews-section {
+  position: relative;
+  padding: 60px 20px;
+  background-color: #2e2b4f;
+  text-align: center;
+  }
+
+
+  .review-nav:hover {
+    color: #ccc;
+  }
+
+
   /* --- Courses Section --- */
   .courses-section {
     background: transparent;
@@ -870,7 +882,6 @@
   scroll-behavior: smooth;
   overflow-x: auto;              /* разрешаем прокрутку */      /* плавная прокрутка */
   scroll-snap-type: x mandatory;
-  width: 400px;
   max-width: 100%;
   margin: 0 auto; /* центрируем по горизонтали */             /* подгони под желаемую ширину */
 }
@@ -878,7 +889,7 @@
 /* Один отзыв */
 .review {
   flex: 0 0 100%;           /* каждый отзыв — как ширина трека */
-  max-width: 600px;         /* не растягиваемся слишком */
+  max-width: 700px;         /* не растягиваемся слишком */
   margin: 0 auto;
   background: #fff;
   color: #333;
@@ -897,6 +908,26 @@
   font-weight: 600;
   text-align: right;
 }
+
+.reviews-viewport {
+  overflow: hidden;
+  width: 700px; /* фиксированная ширина */
+  margin: 0 auto;
+  position: relative;
+}
+
+.reviews-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.review {
+  flex: 0 0 auto;
+  width: 700px;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+
 
 /* Стрелки */
 .review-nav {

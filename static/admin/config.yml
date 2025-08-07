@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: kreznikovaa/arkhimed
+  name: git-gateway
   branch: main
-  auth_scope: repo
-  base_url: https://arhimedcenter.ru/
-  auth_endpoint: /auth
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"

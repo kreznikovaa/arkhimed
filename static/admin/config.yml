@@ -45,3 +45,21 @@ collections:
     fields:
       - { name: "title", label: "Заголовок", widget: "string" }
       - { name: "body", label: "Контент", widget: "markdown" }
+  - name: "features"
+    label: "Особенности"
+    folder: "content/features"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Заголовок", widget: "string" }
+      - { name: "text", label: "Описание", widget: "text" }
+      - { name: "image", label: "Иконка", widget: "image" }
+
+  - name: "trust"
+    label: "Почему нам доверяют"
+    folder: "content/trust"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Заголовок", widget: "string" }
+      - { name: "text", label: "Описание", widget: "text" }

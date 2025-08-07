@@ -2,9 +2,6 @@ backend:
   name: github
   repo: kreznikovaa/arkhimed
   branch: main
-  auth_scope: repo
-  base_url: https://serene-pothos-ad7e23.netlify.app
-  auth_endpoint: /auth
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"

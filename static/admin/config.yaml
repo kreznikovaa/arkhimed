@@ -1,0 +1,58 @@
+backend:
+  name: auth0
+  auth_type: implicit
+  app_id: UhdKjDeoDZZWXd0UudjyJ5rEacCi0ofh
+  base_url: https://dev-ftv0fk7m2jjch8cy.auth0.com
+  auth_endpoint: /authorize
+  api_root: https://api.github.com
+  site_domain: arhimedcenter.netlify.app
+  repo: kreznikovaa/arkhimed
+  branch: main
+
+
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "courses"
+    label: "Курсы"
+    folder: "content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Название курса", widget: "string" }
+      - { name: "category", label: "Категория", widget: "string" }
+      - { name: "format", label: "Формат", widget: "string" }
+      - { name: "price", label: "Цена", widget: "string" }
+      - { name: "date", label: "Дата", widget: "datetime" }
+
+  - name: "reviews"
+    label: "Отзывы"
+    folder: "content/reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "author", label: "Автор", widget: "string" }
+      - { name: "body", label: "Текст отзыва", widget: "markdown" }
+      - { name: "date", label: "Дата", widget: "datetime" }
+
+  - name: "gallery"
+    label: "Галерея"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Название", widget: "string" }
+      - { name: "image", label: "Изображение", widget: "image" }
+
+  - name: "posts"
+    label: "Страницы"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Заголовок", widget: "string" }
+      - { name: "body", label: "Контент", widget: "markdown" }

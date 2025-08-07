@@ -1,15 +1,7 @@
 backend:
-  name: auth0
-  auth_type: implicit
-  app_id: UhdKjDeoDZZWXd0UudjyJ5rEacCi0ofh
-  base_url: https://dev-ftv0fk7m2jjch8cy.auth0.com
-  auth_endpoint: /authorize
-  api_root: https://api.github.com
-  site_domain: arhimedcenter.netlify.app
-  identity_url: https://arhimedcenter.netlify.app/.netlify/identity
+  name: github
   repo: kreznikovaa/arkhimed
   branch: main
-
 
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"

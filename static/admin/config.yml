@@ -5,6 +5,8 @@ backend:
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
+site_url: https://serene-pothos-ad7e23.netlify.app
+
 collections:
   - name: "courses"
     label: "Курсы"
@@ -17,31 +19,3 @@ collections:
       - { name: "format", label: "Формат", widget: "string" }
       - { name: "price", label: "Цена", widget: "string" }
       - { name: "date", label: "Дата", widget: "datetime" }
-
-  - name: "reviews"
-    label: "Отзывы"
-    folder: "content/reviews"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "author", label: "Автор", widget: "string" }
-      - { name: "body", label: "Текст отзыва", widget: "markdown" }
-      - { name: "date", label: "Дата", widget: "datetime" }
-
-  - name: "gallery"
-    label: "Галерея"
-    folder: "content/gallery"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Название", widget: "string" }
-      - { name: "image", label: "Изображение", widget: "image" }
-
-  - name: "posts"
-    label: "Страницы"
-    folder: "content/posts"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Заголовок", widget: "string" }
-      - { name: "body", label: "Контент", widget: "markdown" }

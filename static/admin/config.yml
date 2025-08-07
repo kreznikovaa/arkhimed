@@ -6,6 +6,7 @@ backend:
   auth_endpoint: /authorize
   api_root: https://api.github.com
   site_domain: arhimedcenter.netlify.app
+  identity_url: https://arhimedcenter.netlify.app/.netlify/identity
   repo: kreznikovaa/arkhimed
   branch: main
 

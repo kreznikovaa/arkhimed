@@ -211,14 +211,14 @@
 @media (max-width: 1024px){
   .main-overlay{ gap: 12px; }
   .main-overlay h1{ max-width: 16ch; }
-  .main-overlay h4{ max-width: 50ch; }
+  .main-overlay h4{ max-width: 45ch; }
 }
 
 /* ------- Phones ------- */
 @media (max-width: 720px){
   .main-overlay{ padding-left: 20px; padding-right: 20px; }
   .main-overlay h1{ max-width: 12ch; }
-  .main-overlay h4{ max-width: 40ch; }
+  .main-overlay h4{ max-width: 35ch; }
   .main-button{ font-size: 16px; padding: 12px 18px; }
 }
 
@@ -227,7 +227,6 @@
   .main-overlay{ padding: 8px 16px 16px; }
   .main-overlay h1{ font-size: clamp(28px, 10vw, 40px); max-width: 11ch; }
   .main-overlay h4{ font-size: 15px; }
-  .main-button{ width: 100%; padding: 14px; }
 }
 
 /* safe-area для iOS */
@@ -244,6 +243,26 @@
 }
 @media (prefers-reduced-motion: reduce){
   .main-button{ transition: none; }
+}
+/* 1) Слойность внутри hero:
+      текст всегда выше, всё прочее (декор) — ниже */
+.main-page{ display: grid; } /* если уже стоит — ок */
+.main-page > .main-image,
+.main-page > .main-overlay{ grid-area: 1 / 1; }
+
+.main-page > .main-overlay{ z-index: 3; position: relative; }
+.main-page > :not(.main-overlay):not(.main-image){
+  grid-area: 1 / 1;
+  z-index: 1;                 /* декор под текстом */
+  pointer-events: none;       /* чтобы не ловил клики поверх текста */
+}
+
+/* 2) На телефонах убираем декоративные «пузырьки»,
+      чтобы они не теснили заголовок */
+@media (max-width: 720px){
+  .main-page > :not(.main-overlay):not(.main-image){
+    display: none;
+  }
 }
 
   /* --- Features Section (Benefits) --- */

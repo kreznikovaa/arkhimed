@@ -342,7 +342,7 @@
 
   /* контейнер секции */
   .courses-section{width:80%;margin:0 auto;}
-  @media (max-width:900px){.courses-section{width:100%;padding:0 14px;}}
+  @media (max-width:900px){.courses-section{width:95%;padding:0 14px;}}
 
   /* заголовки секции */
   .courses-section h1{font-size:clamp(28px,4px);margin-bottom:24px;font-weight: 700;}
@@ -432,7 +432,7 @@
     .courses-grid{ gap: 12px; }
     .card-cover img{ height: 100px; }
     .course-card{ border-radius: 12px; }
-    .course-btn{ width: 100%; padding: 12px; }        /* кнопка на всю ширину */
+    .course-btn{ width: 90%; padding: 12px; }        /* кнопка на всю ширину */
   }
 
   /* сверхузкие (< 360px): делаем 1 колонку как запасной вариант */

@@ -342,7 +342,7 @@
 
   /* контейнер секции */
   .courses-section{width:80%;margin:0 auto;}
-  @media (max-width:900px){.courses-section{width:95%;padding:0 14px;}}
+  @media (max-width:900px){.courses-section{width:90%;padding:0 5%;}}
 
   /* заголовки секции */
   .courses-section h1{font-size:clamp(28px,4px);margin-bottom:24px;font-weight: 700;}

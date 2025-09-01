@@ -1,15 +1,19 @@
 /* --- Web Font Faces (if needed) --- */
 @font-face {
     font-family: 'Headings';
-    src: url('../fonts/headings.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Bold.tff') format('truetype');
   }
   @font-face {
     font-family: 'Subheadings';
-    src: url('../fonts/subheadings.ttf') format('truetype');
+    src: url('../fonts/OpenSans-SemiBold.tff') format('truetype');
   }
   @font-face {
     font-family: 'Text';
-    src: url('../fonts/text.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  }
+  @font-face {
+  font-family: 'Light';
+  src: url('/fonts/OpenSans-Light.ttf') format('truetype');
   }
   
   /* --- Base Typography --- */
@@ -19,7 +23,7 @@
     font-weight: normal;
     line-height: 1.3;
   }
-  h3, h4 {
+  h3 {
     font-family: 'Subheadings', sans-serif;
     font-size: 28px;
     font-weight: normal;
@@ -30,7 +34,12 @@
     font-size: 20px;
     line-height: 1.6;
   }
-  
+    h4 {
+    font-family: 'Light', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+  }
   /* --- Corporate Colors --- */
   :root {
     --dark-blue: #005490;
@@ -108,100 +117,134 @@
   
 
   
-  .main-page {
+
+
+/* ====================== HERO / MAIN SECTION ======================= */
+
+/* высота фикс-хедера (под себя) */
+:root { --header-h: 72px; }
+@media (max-width: 900px){ :root { --header-h: 64px; } }
+
+.main-page{
   position: relative;
   width: 100%;
-  overflow: hidden;
+  display: grid;                 /* ключ: накладываем слои, считаем высоту по максимуму */
+  /* overflow: visible; */       /* оставь по умолчанию; если раньше стоял hidden — убери */
 }
 
-.main-image {
+/* фоновая картинка */
+.main-image{
+  margin-top: 20px;
+  grid-area: 1 / 1;              /* та же ячейка, что и оверлей */
   width: 100%;
   height: auto;
   display: block;
 }
 
-.main-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0px 40px;
-  color: rgb(37, 37, 37);
+/* текстовый слой поверх картинки — БЕЗ absolute */
+.main-overlay{
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 1;                    /* поверх картинки */
+
+  /* не заезжаем под хэдер */
+  padding-top: max(calc(var(--header-h) - var(--hero-lift, 5px)), 0px);
+
+  /* умные боковые поля + вертикальный ритм */
+  padding-left: clamp(16px, 4vw, 40px);
+  padding-right: clamp(16px, 4vw, 40px);
+  gap: 14px;
+
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: flex-start;
+
+  color: #252525;
 }
 
-.main-overlay h1 {
-  font-size: 80px;
-  color: var(--black);
+/* заголовок */
+.main-overlay h1{
+  font-size: clamp(36px, 8vw, 88px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #282648;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: -20px 0 12px;
+  max-width: 14ch;
 }
 
-
-.main-overlay p {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.4;
-  margin-bottom: 30px;
-  font-weight: bold;
+/* подзаголовок */
+.main-overlay h4{
+  max-width: 48ch;
+  font-size: clamp(14px, 2.2vw, 20px);
+  line-height: 1.45;
+  margin: 0 0 28px;
+  font-weight: 500;
 }
 
-.main-button {
+/* кнопка */
+.main-button{
   background-color: var(--blue);
-  color: white;
+  color: #fff;
   font-size: 18px;
   padding: 12px 24px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease;
+  transition: background .25s ease, transform .04s ease;
+}
+.main-button:hover{ background-color:#007bd3; }
+.main-button:active{ transform: translateY(1px); }
+
+/* ------- Desktop fine-tuning ------- */
+@media (min-width: 1280px){
+  .main-overlay > *{ max-width: min(640px, 56%); }
+  .main-overlay{ padding-top: calc(var(--header-h) + 12px); }
+}
+@media (min-width: 1600px){
+  .main-overlay > *{ max-width: min(680px, 52%); }
+  .main-overlay h1{ font-size: clamp(44px, 5.4vw, 84px); }
 }
 
-.main-button:hover {
-  background-color: #007bd3;
-}
-@media (max-width: 768px) {
-.main-page{
-  height: 80vh;
-}
-.main-page img {
-  height: 100%;
-  object-fit: cover;
+/* ------- Tablets / small laptops ------- */
+@media (max-width: 1024px){
+  .main-overlay{ gap: 12px; }
+  .main-overlay h1{ max-width: 16ch; }
+  .main-overlay h4{ max-width: 50ch; }
 }
 
+/* ------- Phones ------- */
+@media (max-width: 720px){
+  .main-overlay{ padding-left: 20px; padding-right: 20px; }
+  .main-overlay h1{ max-width: 12ch; }
+  .main-overlay h4{ max-width: 40ch; }
+  .main-button{ font-size: 16px; padding: 12px 18px; }
+}
 
-  .main-overlay {
-    padding: 30px;
-    max-width: 90%;
-    height: max-content;
-  }
+/* ------- Small phones ------- */
+@media (max-width: 480px){
+  .main-overlay{ padding: 8px 16px 16px; }
+  .main-overlay h1{ font-size: clamp(28px, 10vw, 40px); max-width: 11ch; }
+  .main-overlay h4{ font-size: 15px; }
+  .main-button{ width: 100%; padding: 14px; }
+}
 
-  .main-overlay h1 {
-    font-size: 40px;
-    width: 90%;
-
-  }
-
-  .main-overlay h2 {
-    font-size: 20px;
-  }
-
-  .main-overlay p {
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .main-overlay .main-btn {
-    font-size: 14px;
-    padding: 10px 20px;
+/* safe-area для iOS */
+@supports (padding: max(0px)){
+  .main-overlay{
+    padding-left: max(clamp(16px, 4vw, 40px), env(safe-area-inset-left));
+    padding-right: max(clamp(16px, 4vw, 40px), env(safe-area-inset-right));
   }
 }
 
-
+/* тач-устройства */
+@media (pointer: coarse){
+  .main-button{ padding: 14px 18px; }
+}
+@media (prefers-reduced-motion: reduce){
+  .main-button{ transition: none; }
+}
 
   /* --- Features Section (Benefits) --- */
   .features-section {
@@ -239,6 +282,7 @@
     font-size: 16px;
     color: #666;
     margin-bottom: 0;
+    font-weight: 300;
   }
   @media (max-width: 800px) {
     .feature-card {
@@ -271,6 +315,143 @@
   .trust-list li {
     margin-bottom: 10px;
   }
+
+  /* ====== Courses (clean minimal) ===================================== */
+
+  /* контейнер секции */
+  .courses-section{width:80%;margin:0 auto;}
+  @media (max-width:900px){.courses-section{width:100%;padding:0 14px;}}
+
+  /* заголовки секции */
+  .courses-section h1{font-size:clamp(28px,4px);margin-bottom:24px;font-weight: 700;}
+  .course-category{margin-bottom:36px;}
+  .course-category>h3{font-size:clamp(20px,2.1vw,26px);margin:0 0 6px;font-weight:700;}
+  .course-category>p{margin:0 0 30px;color:#667085;font-size:14px; font-style: italic;}
+
+  /* сетка карточек */
+  .courses-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:24px;
+    align-items:start;              /* важное: не растягивать соседние карточки */
+  }
+  @media (max-width:1024px){.courses-grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:720px){.courses-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* карточка */
+  .course-card{
+    background:#fbfbfb;
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;flex-direction:column;align-self:start;height:auto;
+  }
+
+  /* верх */
+  .card-cover{border-radius:12px;overflow:hidden;}
+  .card-cover img{display:block;width:100%;height:140px;object-fit:cover;}
+  .card-title{color:#111;font-size:16px;line-height:1.2;padding:16px 10px 0;min-height:0px;}
+
+  /* низ (кнопка «развернуть») */
+  .card-bottom{display:flex;justify-content:flex-end;align-items:center;padding:4px 8px 8px;background:transparent;}
+  .expand-toggle{appearance:none;background:transparent;border:0;color:#667085;font-size:12px;font-style:italic;font-family:'Light'; cursor: pointer;padding:6px;border-radius:8px;transition:color .2s;}
+  .expand-toggle:hover{color:#475467;}
+
+  /* раскрывающаяся часть */
+  .course-card-back{
+    background:#fbfbfb;             /* совпадает с карточкой */
+    overflow:hidden;
+    max-height:0;                   /* управляет JS */
+    transition:max-height .35s ease;
+    padding:0 12px;
+    border-top:0;
+    display:flex;flex-direction:column;gap:6px;
+  }
+  /* скрываем нижнюю плашку при открытии и добавляем паддинги */
+  .course-card.is-open .card-bottom{display:none;}
+  .course-card.is-open .course-card-back{padding:10px 12px 12px;}
+
+  /* типографика в «спинке» */
+  .course-card-back > *{margin:0;}                      /* убираем собственные margin */
+  .course-card-back .features{padding-left:16px;font-size:12px;color:#111;}
+  .course-card-back .features li{margin:2px 0;}
+  .course-card-back .desc{font-size:12px;color:#475467;} /* только описание серое */
+  .course-card-back .meta{font-size:12px;color:#111;;}
+
+  /* «свернуть» справа, курсивом */
+  .collapse-toggle{
+    display:none;align-self:flex-end;
+    appearance:none;background:transparent;border:0;cursor:pointer;
+    font-size:12px;font-style:italic;color:#667085;padding:4px 0 6px;
+  }
+  .course-card.is-open .collapse-toggle{display:inline-block;}
+
+  /* CTA */
+  .course-btn{
+    display:inline-block;margin-top:6px;padding:10px 12px;border-radius:10px;
+    background:var(--orange);color:#000000;text-decoration:none;font-size:12px;font-weight:600;
+    text-align:center;transition:filter .15s, transform .04s;
+  }
+  .course-btn:hover{background: #ffc183;}
+  .course-btn:active{transform:translateY(1px);}
+
+  #course .course-card-back { background: #fbfbfb !important; /* убираем синий */ }
+  /* ===== Mobile / Narrow enhancements =================================== */
+
+  /* телефон/планшет в портрете */
+  @media (max-width: 720px){
+    .courses-section{ padding: 0 16px; }             /* чуть шире поля */
+    .courses-grid{ gap: 14px; }                       /* компактнее сетка */
+    .card-cover img{ height: 120px; }                 /* ниже обложка */
+    .card-title{ padding: 8px 8px 0; }
+  }
+
+  /* компактные телефоны */
+  @media (max-width: 480px){
+    .courses-grid{ gap: 12px; }
+    .card-cover img{ height: 100px; }
+    .course-card{ border-radius: 12px; }
+    .course-btn{ width: 100%; padding: 12px; }        /* кнопка на всю ширину */
+  }
+
+  /* сверхузкие (< 360px): делаем 1 колонку как запасной вариант */
+  @media (max-width: 360px){
+    .courses-grid{ grid-template-columns: 1fr; }
+    .card-cover img{ height: 96px; }
+  }
+
+  /* безопасные поля под iOS-«чёлку»/жесты */
+  @supports (padding: max(0px)){
+    .courses-section{
+      padding-left: max(14px, env(safe-area-inset-left));
+      padding-right: max(14px, env(safe-area-inset-right));
+    }
+  }
+
+  /* комфортные тапы на сенсорах */
+  @media (pointer: coarse){
+    .expand-toggle,
+    .collapse-toggle{ padding: 8px 4px; }
+    .course-btn{ padding: 12px; }
+    .expand-toggle:hover,
+    .collapse-toggle:hover{ color: inherit; }         /* без «ховера» на таче */
+  }
+
+  /* видимая клавиатурная фокусировка */
+  .expand-toggle:focus-visible,
+  .collapse-toggle:focus-visible,
+  .course-btn:focus-visible{
+    outline: 2px solid #1F6FFF;
+    outline-offset: 2px;
+  }
+
+  /* уважение к reduce-motion */
+  @media (prefers-reduced-motion: reduce){
+    .course-card-back,
+    .expand-toggle,
+    .collapse-toggle,
+    .course-btn{ transition: none; }
+  }
+
   .review-container {
     margin-top: 50px;
     padding: 20px;
@@ -297,118 +478,6 @@
 
   .review-nav:hover {
     color: #ccc;
-  }
-
-
-  /* --- Courses Section --- */
-  .courses-section {
-    background: transparent;
-    padding: 80px 5vw;
-    text-align: left;
-    max-width: 1200px;
-    margin: auto;
-  }
-  .courses-section h2 {
-    margin-bottom: 30px;
-    font-weight: bold;
-    
-  }
-  .course-category {
-    margin-bottom: 50px;
-  }
-  .course-category h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  .courses-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-  }
-  .course-card {
-    position: relative; /* нужно для градиента */
-    width: calc(33.33% - 20px);
-    height: 200px;
-    color: #ffffff;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-  .course-card-inner {
-    position: absolute;
-    width: 100%;
-    height: 200%; /* front + back stacked vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.4s ease-in-out;
-  }
-  .course-card:hover .course-card-inner {
-    transform: translateY(-50%);
-    /* Reveal back side on hover (desktop) */
-  }
-  .course-card-front, .course-card-back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-  }
-  .course-card-front {
-    height: 50%;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .course-card-back {
-    height: 50%;
-    font-size: 14px;
-    text-align: center;
-    flex-direction: column;
-  }
-  .course-card-back p {
-    margin: 5px 0;
-  }
-  .course-btn {
-    display: inline-block;
-    padding: 8px 12px;
-    background: rgb(255, 255, 255);
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    border: none;
-    border-radius: var(--radius);
-    margin-top: 10px;
-    transition: background 0.3s, transform 0.3s;
-    cursor: pointer;
-  }
-  .course-btn:hover {
-    background: rgb(176, 178, 207);
-    transform: translateY(-2px);
-  }
-  @media (max-width: 768px) {
-    .course-card {
-      width: calc(50% - 20px);
-    }
-  }
-  @media (max-width: 600px) {
-    .course-card {
-      width: 100%;
-      height: auto;
-    }
-    .course-card-inner {
-      position: static;
-      height: auto;
-      transform: none;
-    }
-    .course-card-front, .course-card-back {
-      height: auto;
-    }
-    /* Disable hover flip on touch devices */
-    .course-card:hover .course-card-inner {
-      transform: none;
-    }
   }
   
   /* --- Contact Form Section --- */

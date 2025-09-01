@@ -15,13 +15,15 @@
     <div class="header-container">
         
         <div class="logo">
+        <a href="/#main" aria-label="На главную">
             <img src="/images/logo.png" alt="Логотип">
+        </a>
         </div>
 
         
         <nav class="menu">
             <ul class="nav-links" id="navLinks">
-                <li><a href="/#hero">О нас</a></li>
+                <li><a href="/#main">О нас</a></li>
                 <li><a href="/#course">Курсы</a></li>
                 <li><a href="/#contact">Записаться</a></li>
                 <li><a href="/#gallery">Галерея</a></li>
@@ -42,11 +44,11 @@
     
 
 
-<section class="main-page">
-  <img src="/images/1.jpg" alt="Ученики Архимеда" class="main-image" />
+<section class="main-page" id='main'>
+  <img src="/images/1.png" alt="Ученики Архимеда" class="main-image" />
   <div class="main-overlay">
     <h1>Центр олимпиадной подготовки</h1>
-    <p>Мы придаем учебе смысл. В момент, когда у них загораются глаза, мы знаем — получилось.</p>
+    <h4>Мы придаем учебе смысл. В момент, когда у них загораются глаза, мы знаем — получилось.</h4>
     <a href="#contact" class="main-button">Записаться</a>
   </div>
 </section>
@@ -83,156 +85,434 @@
 
 
 
-<section id="reviews" class="reviews-section">
-  <div class="container">
-    <h2>Отзывы</h2>
-    <div class="reviews-container">
-      
 
-      <div class="reviews-viewport">
-        <div class="reviews-track">
-          
-          <blockquote class="review">
-          <p>“Занимаюсь уже 8–9 месяцев, очень нравится — смогла поднять успеваемость по математике! Очень хорошо готовят к экзаменам! 👍”</p>
-          <footer>— Варвара Табарова, ученица</footer>
-          </blockquote>
-          
-          <blockquote class="review">
-          <p>“Занимаюсь математикой с 5 июня, учитель Дмитрий Сергеевич Костенко. Ни капельки не пожалела, что записалась. До занятий были тройки, а теперь пятёрки!”</p>
-          <footer>— Карина Антонян, ученица</footer>
-          </blockquote>
-          
-        </div>
-      </div>
 
-      
-    </div>
-  </div>
-</section>
+
+
+
+
+
+
+
+
+<div class="yandex-reviews"
+     style="max-width:760px; width:100%; height:620px; margin:0 auto; position:relative; overflow:hidden;">
+  <iframe
+    src="https://yandex.ru/maps-reviews-widget/143930302879?comments"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Отзывы Архимед"
+    style="width:100%; height:100%; border:1px solid #e6e6e6; border-radius:12px; box-sizing:border-box; background:#fff;">
+  </iframe>
+
+  <a href="https://yandex.com/maps/org/arkhimed/143930302879/" target="_blank" rel="noopener"
+     style="box-sizing:border-box; text-decoration:none; color:#b3b3b3; font-size:10px;
+            font-family:YS Text,system-ui,sans-serif; padding:0 16px; position:absolute;
+            bottom:8px; left:0; width:100%; text-align:center; overflow:hidden;
+            text-overflow:ellipsis; display:block; max-height:14px; white-space:nowrap;">
+    Архимед — на Яндекс Картах
+  </a>
+</div>
+
+
 
 
 <section id="course" class="courses-section animate">
-  <h2>Наши курсы</h2>
+  <h1>Наши курсы</h1>
+
   <div class="course-category">
-    <h3>Математика</h3>
-    <div class="courses-container">
+    <h3>Олимпиадная математика</h3>
+    <p>Для начинающих и тех, кто уже пишет олимпиады!</p>
+
+    <div class="courses-grid">
       
         
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Олимпиадная математика, 5-6 класс</p>
+          
+          <article class="course-card" data-cat="olimp-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/olimp-math.png" alt="olimp-math">
               </div>
-              <div class="course-card-back">
-                <p>Формат: Очно, 1 раз в неделю, 90 минут</p>
-                <p>Цена: 1190₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
-              </div>
-            </div>
-          </div>
-        
-      
-        
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Подготовка к ЕГЭ (математика, базовый уровень)</p>
-              </div>
-              <div class="course-card-back">
-                <p>Формат: Онлайн, 2 раза в неделю, 60 минут</p>
-                <p>Цена: 1250₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+
+              <div class="card-title">
+                Олимпиадная математика, 4 класс
               </div>
             </div>
-          </div>
-        
-      
-        
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Подготовка к ЕГЭ (математика, профильный уровень)</p>
-              </div>
-              <div class="course-card-back">
-                <p>Формат: Очно-онлайн, 2 раза в неделю, 90 минут</p>
-                <p>Цена: 1190₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
-              </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
             </div>
-          </div>
-        
-      
-        
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Подготовка к ОГЭ (математика, онлайн)</p>
-              </div>
-              <div class="course-card-back">
-                <p>Формат: Онлайн, 2 раза в неделю, 60 минут</p>
-                <p>Цена: 1250₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
-              </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>1 раз в неделю</li>
+                  
+                    <li>очно</li>
+                  
+                    <li>60 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Занятия проходят по классической системе листочков. Подходят для начинающего уровня.</p>
+              
+
+              
+                <p class="meta">900₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
             </div>
-          </div>
+          </article>
         
       
         
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Подготовка к ОГЭ (математика, очно-онлайн)</p>
+          
+          <article class="course-card" data-cat="olimp-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/olimp-math.png" alt="olimp-math">
               </div>
-              <div class="course-card-back">
-                <p>Формат: Очно-онлайн, 2 раза в неделю, 90 минут</p>
-                <p>Цена: 1190₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+
+              <div class="card-title">
+                Олимпиадная математика, 5 класс
               </div>
             </div>
-          </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>1 раз в неделю</li>
+                  
+                    <li>очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Занятия проходят по классической системе листочков. Подходят для любого уровня подготовки.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
         
       
         
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Углубленная математика, 7 класс</p>
+          
+          <article class="course-card" data-cat="olimp-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/olimp-math.png" alt="olimp-math">
               </div>
-              <div class="course-card-back">
-                <p>Формат: Очно-онлайн, 2 раза в неделю, 90 минут</p>
-                <p>Цена: 1190₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+
+              <div class="card-title">
+                Олимпиадная математика, 6 класс
               </div>
             </div>
-          </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>1 раз в неделю</li>
+                  
+                    <li>очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Занятия проходят по классической системе листочков. Подходят для любого уровня подготовки.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
         
       
         
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>Углубленная математика, 8 класс</p>
+          
+          <article class="course-card" data-cat="olimp-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/olimp-math.png" alt="olimp-math">
               </div>
-              <div class="course-card-back">
-                <p>Формат: Онлайн, 2 раза в неделю, 90 минут</p>
-                <p>Цена: 1250₽ за занятие</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+
+              <div class="card-title">
+                Олимпиадная математика, 7 класс
               </div>
             </div>
-          </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>1 раз в неделю</li>
+                  
+                    <li>очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Занятия проходят по классической системе листочков. Подходят для любого уровня подготовки.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
         
       
     </div>
   </div>
 
-  <div class="course-category">
-    <h3>Специальные программы и мероприятия</h3>
-    <div class="courses-container">
+    <div class="course-category">
+    <h3>Подготовка к экзаменам по математике</h3>
+    <p>Фокус на понимании теории, изучении алгоритмов и решении задач.</p>
+
+    <div class="courses-grid">
       
         
       
         
       
+        
+      
+        
+      
+        
+          
+          <article class="course-card" data-cat="exam-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/exam-math.png" alt="exam-math">
+              </div>
+
+              <div class="card-title">
+                Подготовка к ЕГЭ, 10 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 очно &#43; 1 онлайн</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Включены 2 диагностики и составление индивидуального учебного плана. Подходит для любого уровня подготовки. На онлайн занятии разбираем теорию (материалы сохраняются), на оффлайн занятии - практикуемся!</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+          
+          <article class="course-card" data-cat="exam-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/exam-math.png" alt="exam-math">
+              </div>
+
+              <div class="card-title">
+                Подготовка к ЕГЭ, 11 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 очно &#43; 1 онлайн</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Включены 2 диагностики и составление индивидуального учебного плана. Подходит для любого уровня подготовки. На онлайн занятии разбираем теорию (материалы сохраняются), на оффлайн занятии - практикуемся!</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+      
+        
+          
+          <article class="course-card" data-cat="exam-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/exam-math.png" alt="exam-math">
+              </div>
+
+              <div class="card-title">
+                Подготовка к ОГЭ, гибрид
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 очно &#43; 1 онлайн</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Включены 2 диагностики и составление индивидуального учебного плана. Подходит для любого уровня подготовки. На онлайн занятии разбираем теорию (материалы сохраняются), на оффлайн занятии - практикуемся!</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+          
+          <article class="course-card" data-cat="exam-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/exam-math.png" alt="exam-math">
+              </div>
+
+              <div class="card-title">
+                Подготовка к ОГЭ, онлайн
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>онлайн</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Включены 2 диагностики и составление индивидуального учебного плана. Подходит для любого уровня подготовки. Все материалы с курса сохраняются!</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
         
       
         
@@ -245,7 +525,290 @@
       
     </div>
   </div>
+
+
+    <div class="course-category">
+    <h3>Углубленная математика</h3>
+    <p>Фокус на углубленном изучении школьной программы.</p>
+
+    <div class="courses-grid">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+          <article class="course-card" data-cat="uglub-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/uglub-math.png" alt="uglub-math">
+              </div>
+
+              <div class="card-title">
+                Углубленная математика, 7 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 онлайн &#43; 1 очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Фокус на углубленном изучении школьной программы. Работаем над пониманием тем и умением применить их в сложных задачах.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+          
+          <article class="course-card" data-cat="uglub-math">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/uglub-math.png" alt="uglub-math">
+              </div>
+
+              <div class="card-title">
+                Углубленная математика, 8 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 онлайн &#43; 1 очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Фокус на углубленном изучении школьной программы. Работаем над пониманием тем и умением применить их в сложных задачах.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+    <div class="course-category">
+    <h3>Курсы по физике</h3>
+    <p>Фокус на понимании теории и практике.</p>
+
+    <div class="courses-grid">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+          <article class="course-card" data-cat="physics">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/physics.png" alt="physics">
+              </div>
+
+              <div class="card-title">
+                Подготовка к ОГЭ по физике
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 очно &#43; 1 онлайн</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Включены 2 диагностики и составление индивидуального учебного плана. Подходит для любого уровня подготовки. На онлайн занятии разбираем теорию (материалы сохраняются), на оффлайн занятии - практикуемся!</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+          <article class="course-card" data-cat="physics">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/physics.png" alt="physics">
+              </div>
+
+              <div class="card-title">
+                Углубленная физика, 7 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 онлайн &#43; 1 очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Фокус на углубленном изучении школьной программы. Работаем над их пониманием и умением применить в сложных задачах.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+        
+          
+          <article class="course-card" data-cat="physics">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/physics.png" alt="physics">
+              </div>
+
+              <div class="card-title">
+                Углубленная физика, 8 класс
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              
+                <ul class="features">
+                  
+                    <li>2 раза в неделю</li>
+                  
+                    <li>1 онлайн &#43; 1 очно</li>
+                  
+                    <li>90 минут</li>
+                  
+                </ul>
+              
+
+              
+                <p class="desc">Фокус на углубленном изучении школьной программы. Работаем над их пониманием и умением применить в сложных задачах.</p>
+              
+
+              
+                <p class="meta">1300₽ за занятие</p>
+              
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        
+      
+    </div>
+  </div>
+  
 </section>
+
+
 
   <section id="contact" class="contact-wrapper animate">
     <div class="contact-form-container">
@@ -296,7 +859,7 @@
       <div class="contacts-right">
         <h3>Мы работаем</h3>
         <p>ул. Чугунова 1Б, Раменское</p>
-        <p>Пн–Пт 10:00–20:00</p>
+        <p>Пн–Сб 11:00–18:00</p>
       </div>
     </div>
   </section>

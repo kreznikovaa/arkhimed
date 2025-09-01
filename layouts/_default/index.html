@@ -1,11 +1,11 @@
 {{ define "main" }}
 
 
-<section class="main-page">
-  <img src="/images/1.jpg" alt="Ученики Архимеда" class="main-image" />
+<section class="main-page" id='main'>
+  <img src="/images/1.png" alt="Ученики Архимеда" class="main-image" />
   <div class="main-overlay">
     <h1>Центр олимпиадной подготовки</h1>
-    <p>Мы придаем учебе смысл. В момент, когда у них загораются глаза, мы знаем — получилось.</p>
+    <h4>Мы придаем учебе смысл. В момент, когда у них загораются глаза, мы знаем — получилось.</h4>
     <a href="#contact" class="main-button">Записаться</a>
   </div>
 </section>
@@ -14,7 +14,13 @@
 
 <!-- {{ partial "trust.html" . }} -->
 
-{{ partial "home/reviews.html" . }}
+{{ partial "home/yandex-reviews.html" (dict
+  "orgID"   "143930302879"
+  "orgURL"  "https://yandex.com/maps/org/arkhimed/143930302879/"
+  "orgName" "Архимед"
+  "height"  "620px"    
+) }}
+
 
 {{ partial "home/courses.html" . }}
 
@@ -67,7 +73,7 @@
       <div class="contacts-right">
         <h3>Мы работаем</h3>
         <p>ул. Чугунова 1Б, Раменское</p>
-        <p>Пн–Пт 10:00–20:00</p>
+        <p>Пн–Сб 11:00–18:00</p>
       </div>
     </div>
   </section>

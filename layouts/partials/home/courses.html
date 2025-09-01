@@ -1,45 +1,202 @@
+
 <section id="course" class="courses-section animate">
-  <h2>Наши курсы</h2>
+  <h1>Наши курсы</h1>
+
   <div class="course-category">
-    <h3>Математика</h3>
-    <div class="courses-container">
+    <h3>Олимпиадная математика</h3>
+    <p>Для начинающих и тех, кто уже пишет олимпиады!</p>
+
+    <div class="courses-grid">
       {{ range where .Site.RegularPages "Section" "courses" }}
-        {{ if eq (.Params.category | lower) "math" }}
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>{{ .Title }}</p>
+        {{ if eq (.Params.category | lower) "olimp-math" }}
+          {{ $cat := .Params.category | lower }}
+          <article class="course-card" data-cat="{{ $cat }}">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/{{ $cat }}.png" alt="{{ .Params.category }}">
               </div>
-              <div class="course-card-back">
-                <p>Формат: {{ .Params.format }}</p>
-                <p>Цена: {{ .Params.price }}</p>
-                <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+
+              <div class="card-title">
+                {{ .Title }}
               </div>
             </div>
-          </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              {{ with .Params.features }}
+                <ul class="features">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .Params.description }}
+                <p class="desc">{{ . }}</p>
+              {{ end }}
+
+              {{ with .Params.price }}
+                <p class="meta">{{ . }}</p>
+              {{ end }}
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
         {{ end }}
       {{ end }}
     </div>
   </div>
 
-  <div class="course-category">
-    <h3>Специальные программы и мероприятия</h3>
-    <div class="courses-container">
+    <div class="course-category">
+    <h3>Подготовка к экзаменам по математике</h3>
+    <p>Фокус на понимании теории, изучении алгоритмов и решении задач.</p>
+
+    <div class="courses-grid">
       {{ range where .Site.RegularPages "Section" "courses" }}
-        {{ if eq (.Params.category | lower) "special" }}
-          <div class="course-card">
-            <div class="course-card-inner">
-              <div class="course-card-front">
-                <p>{{ .Title }}</p>
+        {{ if eq (.Params.category | lower) "exam-math" }}
+          {{ $cat := .Params.category | lower }}
+          <article class="course-card" data-cat="{{ $cat }}">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/{{ $cat }}.png" alt="{{ .Params.category }}">
               </div>
-              <div class="course-card-back">
-                {{ .Content }}
-                <a href="#contact" class="course-btn">Записаться</a>
+
+              <div class="card-title">
+                {{ .Title }}
               </div>
             </div>
-          </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              {{ with .Params.features }}
+                <ul class="features">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .Params.description }}
+                <p class="desc">{{ . }}</p>
+              {{ end }}
+
+              {{ with .Params.price }}
+                <p class="meta">{{ . }}</p>
+              {{ end }}
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
         {{ end }}
       {{ end }}
     </div>
   </div>
+
+
+    <div class="course-category">
+    <h3>Углубленная математика</h3>
+    <p>Фокус на углубленном изучении школьной программы.</p>
+
+    <div class="courses-grid">
+      {{ range where .Site.RegularPages "Section" "courses" }}
+        {{ if eq (.Params.category | lower) "uglub-math" }}
+          {{ $cat := .Params.category | lower }}
+          <article class="course-card" data-cat="{{ $cat }}">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/{{ $cat }}.png" alt="{{ .Params.category }}">
+              </div>
+
+              <div class="card-title">
+                {{ .Title }}
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              {{ with .Params.features }}
+                <ul class="features">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .Params.description }}
+                <p class="desc">{{ . }}</p>
+              {{ end }}
+
+              {{ with .Params.price }}
+                <p class="meta">{{ . }}</p>
+              {{ end }}
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+    <div class="course-category">
+    <h3>Курсы по физике</h3>
+    <p>Фокус на понимании теории и практике.</p>
+
+    <div class="courses-grid">
+      {{ range where .Site.RegularPages "Section" "courses" }}
+        {{ if eq (.Params.category | lower) "physics" }}
+          {{ $cat := .Params.category | lower }}
+          <article class="course-card" data-cat="{{ $cat }}">
+            <div class="card-top">
+              <div class="card-cover">
+                <img src="/images/courses/{{ $cat }}.png" alt="{{ .Params.category }}">
+              </div>
+
+              <div class="card-title">
+                {{ .Title }}
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <button class="expand-toggle" type="button" aria-expanded="false">развернуть</button>
+            </div>
+
+            <div class="course-card-back">
+              {{ with .Params.features }}
+                <ul class="features">
+                  {{ range . }}
+                    <li>{{ . }}</li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .Params.description }}
+                <p class="desc">{{ . }}</p>
+              {{ end }}
+
+              {{ with .Params.price }}
+                <p class="meta">{{ . }}</p>
+              {{ end }}
+
+              <a href="#contact" class="course-btn">Записаться на пробный урок</a>
+              <button class="collapse-toggle" type="button" aria-expanded="true">свернуть</button>
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <!-- Повтори блок выше для остальных категорий, меняя eq(...) на нужную -->
 </section>
+

@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/courses/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/features/</loc>
     <lastmod>2025-08-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -17,28 +14,7 @@
     <loc>http://localhost:1313/features/4-licenzia/</loc>
     <lastmod>2025-08-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/olimpiadnaya-matematika-5-6/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/ege-math-base/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/ege-math-profile/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/oge-math-online/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/oge-math-offline-online/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/features/2-programmy/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/uglublennaya-matematika-7/</loc>
-    <lastmod>2025-08-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/courses/uglublennaya-matematika-8/</loc>
     <lastmod>2025-08-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/features/1-lichny-kabinet/</loc>
@@ -111,14 +87,42 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/courses/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/trust/</loc>
   </url><url>
+    <loc>http://localhost:1313/courses/olimpiadnaya-matematika-4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/olimpiadnaya-matematika-5/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/olimpiadnaya-matematika-6/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/olimpiadnaya-matematika-7/</loc>
+  </url><url>
     <loc>http://localhost:1313/trust/trust-3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/ege-math-10/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/ege-math-11/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/oge-physics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/oge-math-offline-online/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/oge-math-online/</loc>
   </url><url>
     <loc>http://localhost:1313/trust/trust-2/</loc>
   </url><url>
     <loc>http://localhost:1313/documents/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/uglublennaya-matematika-7/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/uglublennaya-matematika-8/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/uglublennaya-physics-7/</loc>
+  </url><url>
+    <loc>http://localhost:1313/courses/uglublennaya-physics-8/</loc>
   </url>
 </urlset>

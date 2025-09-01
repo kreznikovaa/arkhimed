@@ -316,7 +316,36 @@
       flex: 1 1 100%;
     }
   }
-  
+  /* Мобильная сетка: 2 карточки в ряд */
+@media (max-width: 720px){
+  .features-section{ padding: 40px 16px; }      /* компактнее поля */
+
+  /* вместо flex используем grid: две колонки */
+  .features-container{
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    justify-content: center;                     /* центрируем сетку */
+    width: 100%;
+  }
+
+  /* карточка растягивается на всю ячейку сетки */
+  .feature-card{
+    max-width: none;                             /* перебиваем 200px */
+    padding: 16px;
+    border-radius: 12px;
+  }
+  .feature-card img{ width: 40px; margin-bottom: 10px; }
+  .feature-card h3{ font-size: 16px; margin-bottom: 6px; }
+  .feature-card p{ font-size: 14px; line-height: 1.45; }
+}
+
+/* если на очень узких (например ≤360px) захочется 1 колонку, раскомментируй
+@media (max-width: 360px){
+  .features-container{ grid-template-columns: 1fr; }
+}
+*/
+
   /* --- Trust Factors Section --- */
   .trust-factors {
     background: transparent;

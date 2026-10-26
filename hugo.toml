@@ -1,6 +1,6 @@
 
 languageCode = 'ru'
 title = 'архимед'
-baseUrl = 'http://localhost:1313/'
+baseUrl = "https://kreznikovaa.github.io/arkhimed/"
 [params]
   custom_css = ["css/custom.css"]

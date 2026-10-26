@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            let response = await fetch("crm api link", { 
+            let response = await fetch("https://arhimed-centr.t8s.ru/Api/V2/AddStudyRequest", { 
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
